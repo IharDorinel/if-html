@@ -1,0 +1,35 @@
+.Heading {
+    font: bold 50px Roboto;
+    position: absolute;
+    top: 120px;
+    right: 450px;
+    left: 450px;
+    bottom: 400px;
+}
+
+#rectangle {
+    position: absolute;
+    width: 100px;
+    height: 4px;
+    margin: -50px 150px 350px 585px;
+    background: #F5BD41;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-content: center;
+    margin-top: 300px;
+}
+
+.container2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-content: center;
+}
+
+.container2 p {
+    font: 24px Roboto;
+}
