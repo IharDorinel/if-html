@@ -1,35 +1,58 @@
-.Heading {
+.bigcontainer {
+    max-width: 1100;
+    padding: 120px 140px 120px 180px;
+}
+
+.heading {
     font: bold 50px Roboto;
-    position: absolute;
-    top: 120px;
-    right: 450px;
-    left: 450px;
-    bottom: 400px;
+    text-align: center;
+    margin: auto;
 }
 
 #rectangle {
-    position: absolute;
+    margin: auto;
     width: 100px;
     height: 4px;
-    margin: -50px 150px 350px 585px;
     background: #F5BD41;
 }
+
 
 .container {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    align-content: center;
-    margin-top: 300px;
+    font: 25px Roboto;
+    margin-top: 100px;
 }
 
-.container2 {
+.Support {
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-content: center;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
 }
 
-.container2 p {
-    font: 24px Roboto;
+.Communicate {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+}
+
+.Book {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+}
+
+.Real {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
 }
