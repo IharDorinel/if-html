@@ -25,7 +25,7 @@
     margin-top: 100px;
 }
 
-.Support {
+.box {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -33,26 +33,15 @@
     margin: auto;
 }
 
-.Communicate {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    margin: auto;
+@font-face {
+    font-family: 'Roboto';
+    src: url('fonts/Roboto_lat500.woff2') format('woff');
+    font-style: normal;
+    font-weight: 500;
 }
-
-.Book {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    margin: auto;
-}
-
-.Real {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    margin: auto;
+@font-face {
+    font-family: 'Roboto';
+    src: url('fonts/Roboto_lat400.woff2') format('woff');
+    font-style: normal;
+    font-weight: 400;
 }
