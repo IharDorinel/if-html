@@ -1,3 +1,5 @@
+@import url(fonts.css);
+
 .bigcontainer {
     max-width: 1100;
     padding: 120px 140px 120px 180px;
@@ -33,15 +35,4 @@
     margin: auto;
 }
 
-@font-face {
-    font-family: 'Roboto';
-    src: url('fonts/Roboto_lat500.woff2') format('woff');
-    font-style: normal;
-    font-weight: 500;
-}
-@font-face {
-    font-family: 'Roboto';
-    src: url('fonts/Roboto_lat400.woff2') format('woff');
-    font-style: normal;
-    font-weight: 400;
-}
+
