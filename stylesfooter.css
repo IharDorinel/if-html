@@ -1,0 +1,26 @@
+@import url(fonts.css);
+
+.bigcontainer {
+    background-color: #131385;
+    max-width: 1440px;
+    padding: 120px 270px 120px 100px;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.box {
+    font: 20px Roboto, sans-serif;
+    line-height: 25px;
+    color: white;
+}
+
+.footer {
+    font: 10px Roboto, sans-serif;
+    color: white;
+    margin-top: 50px;
+}
+
