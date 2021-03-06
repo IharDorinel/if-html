@@ -1,4 +1,7 @@
 @import url(fonts.css);
+body {
+    background-color: #FFFFFF;
+}
 
 .big-container {
     max-width: 1100px;
