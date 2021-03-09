@@ -1,14 +1,13 @@
 @import url(fonts.css);
 
-.bigcontainer {
-    background-color: #131385;
+.big-container {
+    background-color: #10367C;
     max-width: 1440px;
     padding: 120px 270px 120px 100px;
 }
 
 .container {
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
 }
 
@@ -24,3 +23,6 @@
     margin-top: 50px;
 }
 
+._font-weight-bold {
+    font-weight: bold;
+}
