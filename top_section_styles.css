@@ -1,9 +1,11 @@
 .big-container {
     width: 1440px;
     height: 900px;
+    /*min-height: 100vh;*/
     background-image: url("images/booking_images/kastelmeccano.jpg");
     background-repeat: no-repeat;
     background-position: top;
+
 }
 
 .big-upper {
@@ -36,9 +38,10 @@
     align-items: center;
 }
 
-.image {
+.image, .svg {
     width: 205px;
     height: 40px;
+    fill: #3077C6;
     margin-top: 50px;
     margin-left: 100px;
     align-items: center;
@@ -64,24 +67,31 @@
     align-items: center;
 }
 
-.icon_night {
+
+
+.icon_night, .svg {
     width: 30px;
     height: 30px;
+    fill: #ffffff;
     align-items: center;
 }
 
-.icon_account {
+.icon_account, .svg {
     width: 40px;
     height: 40px;
+    fill: #ffffff;
     align-items: center;
 }
 
-.rectangle {
+
+
+.hr {
     margin-top: -104px;
     margin-left: 1000px;
     width: 50px;
     height: 4px;
-    background: #F5BD41;
+    background-color: #F5BD41;
+    border: none;
 }
 
 .discover {
@@ -119,61 +129,56 @@
     line-height: 21px;
 }
 .booking_rectangle {
-    position: relative;
+    margin-top: 24px;
+    width: 100%;
 }
-.city {
-    font: 18px Roboto, sans-serif;
-    font-weight: 400;
-    line-height: 21px;
-    margin-top: 50px;
-    margin-left: 130px;
-    position: absolute;
-    z-index: 2;
-}
-.adults {
-    font: 18px Roboto, sans-serif;
-    font-weight: 400;
-    line-height: 21px;
-    margin-top: 50px;
-    margin-left: 855px;
-    position: absolute;
-    z-index: 2;
-}
-.dates {
-    font: 18px Roboto, sans-serif;
-    font-weight: 400;
-    line-height: 21px;
-    margin-top: 50px;
-    margin-left: 595px;
-    position: absolute;
-    z-index: 3;
-}
-.destination_rectangle {
-    width: 1220px;
+
+.destination_form {
+    width: 400px;
     height: 65px;
     border: 3px solid #F3F3F4;
     background-color: #F3F3F4;
     border-radius: 8px;
-    margin-top: 24px;
     margin-left: 105px;
-    text-align: center;
-    position: absolute;
-    z-index: 1;
+    float: left;
+    align-items: center;
 }
 
-.date_rectangle {
+.dates_form {
     width: 260px;
     height: 71px;
     border: 3px solid #F5BD41;
     background-color: #F3F3F4;
     border-radius: 8px;
-    box-sizing: border-box;
-    margin-top: 24px;
-    margin-right: 610px;
-    margin-left: 570px;
-    text-align: center;
-    position: absolute;
-    z-index: 2;
+    float: left;
+
+}
+
+.adults_form {
+    width: 100px;
+    height: 65px;
+    border: 3px solid #F3F3F4;
+    background-color: #F3F3F4;
+    border-radius: 8px;
+    float: left;
+}
+
+.children_form {
+    width: 100px;
+    height: 65px;
+    border: 3px solid #F3F3F4;
+    background-color: #F3F3F4;
+    border-radius: 8px;
+    float: left;
+}
+
+.rooms_form {
+    width: 100px;
+    height: 65px;
+    border: 3px solid #F3F3F4;
+    background-color: #F3F3F4;
+    border-radius: 8px;
+    float: left;
 }
 
 .button {
@@ -185,25 +190,23 @@
     font: 24px Roboto, sans-serif;
     font-weight: 500;
     line-height: 28px;
-    margin-top: 24px;
-    margin-right: 105px;
-    margin-left: 1145px;
-    position: absolute;
-    z-index: 2;
+
+}
+
+
+.mobile_icons {
+    margin-top: 115px;
+    margin-left: 590px;
+    margin-bottom: 120px;
+
 }
 
 .google_play {
     width: 135px;
     height: 40px;
-    margin-top: 210px;
-    margin-left: 585px;
-    margin-bottom: 120px;
 }
 
 .app_store {
     width: 120px;
     height: 40px;
-    margin-top: 210px;
-    margin-right: 585px;
-    margin-bottom: 120px;
 }
