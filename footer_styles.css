@@ -1,7 +1,21 @@
 @import url(fonts.css);
 
+:root {
+    --primary: #3077C6;
+    --primary-dark: #10367C;
+    --secondary-yellow: #F5BD41;
+    --secondary-dark-mode1: #121212;
+    --secondary-dark-mode2: #1D1E1F;
+    --secondary-dark-mode3: #4D4D4D;
+    --primary-stroke: #F3F3F4;
+    --primary-text: #383838;
+    --primary-white: #FFFFFF;
+    --secondary-text: #BFBFBF;
+    --primary-bg: #EAF0F9;
+}
+
 .big-container {
-    background-color: #10367C;
+    background-color: var(--primary-dark);
     max-width: 1440px;
     padding: 120px 270px 120px 100px;
 }
@@ -14,12 +28,12 @@
 .box {
     font: 20px Roboto, sans-serif;
     line-height: 25px;
-    color: white;
+    color: var(--primary-white);
 }
 
 .footer {
     font: 10px Roboto, sans-serif;
-    color: white;
+    color: var(--primary-white);
     margin-top: 50px;
 }
 
