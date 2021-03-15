@@ -14,30 +14,29 @@
     --primary-bg: #EAF0F9;
 }
 
-.big-container {
-    max-width: 1100px;
-    padding: 120px 140px 120px 180px;
-}
-
 .heading {
     font: bold 40px Roboto, sans-serif;
     text-align: center;
-    margin: auto;
+    margin-top: 120px;
 }
 
-.rectangle {
-    margin: 30px auto;
-    width: 100px;
-    height: 4px;
-    background-color: var(--secondary-yellow);
-}
+/*.heading:hover:after {*/
+/*    content: "";*/
+/*    display: block;*/
+/*    width: 100px;*/
+/*    height: 4px;*/
+/*    background: #F5BD41;*/
+/*    margin: auto;*/
+/*}*/
 
 
 .container {
+    max-width: 1100px;
+    padding: 120px 140px 120px 180px;
     display: flex;
     justify-content: space-between;
     font: 25px Roboto, sans-serif;
-    margin-top: 150px;
+    margin-top: 100px;
 }
 
 .box {
@@ -49,21 +48,13 @@
 
 .icon {
     fill: var(--primary);
-
+    align-self: auto;
+    text-align: center;
 }
 
-/*.iconsName {*/
-/*    margin: 0 auto;*/
-/*    padding-top: 50px;*/
-/*}*/
 
-/*.svg {*/
-/*    margin: 0 auto;*/
-/*}*/
 
-/*[class*="col-"] {*/
-/*    float: left;*/
-/*}*/
+
 
 /*For mobile phones*/
 [class*="col-"] {
@@ -89,17 +80,27 @@
 @media only screen and (max-width: 768px) {
     .container {
         display: flex;
-        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        padding: unset;
+        margin: auto;
+        font: 15px Roboto, sans-serif;
     }
 
     .heading {
         font: bold 28px Roboto, sans-serif;
-        flex-wrap: nowrap;
     }
 
     .box {
         margin-top: 25px;
     }
+
+    .icon svg {
+        max-width: 70%;
+    }
+
+
 
     /*/*For desktop*/
     /*.col-1 {width: 8.33%;}*/

@@ -37,6 +37,50 @@
     margin-top: 50px;
 }
 
+.image {
+    fill: var(--primary-white);
+    margin: auto;
+    text-align: center;
+    display: none;
+}
+
+
 ._font-weight-bold {
     font-weight: bold;
+}
+
+@media only screen and (max-width: 768px) {
+    .big-container {
+        padding: 120px 0 120px 100px;
+        text-align: center;
+    }
+
+    .container {
+        max-height: 50%;
+        justify-content: space-around;
+        text-align: center;
+        margin: 0 50px 0 0;
+    }
+
+    .image {
+        display: flex;
+    }
+
+    .box {
+        font: 15px Roboto, sans-serif;
+    }
+
+    .point {
+        display: none;
+    }
+
+    ._font-weight-bold {
+        text-decoration: underline;
+    }
+
+    .footer {
+        font: 12px Roboto, sans-serif;
+        text-align: center;
+        margin: 50px 100px 0 0;
+    }
 }
