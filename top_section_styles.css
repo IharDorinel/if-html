@@ -20,7 +20,7 @@ body {
 .big-container {
     width: 1440px;
     height: 900px;
-    /*min-height: 100vh;*/
+    min-height: 100vh;
     background-image: url("images/booking_images/kastelmeccano.jpg");
     background-repeat: no-repeat;
     background-position: top;
@@ -39,12 +39,13 @@ body {
     justify-content: space-between;
     width: 345px;
     align-items: center;
+    margin-top: 50px;
 }
 
 .words {
     display: flex;
     justify-content: space-between;
-    margin-top: 50px;
+    /*margin-top: 50px;*/
     width: 200px;
     align-items: center;
 }
@@ -52,7 +53,7 @@ body {
 .icons {
     display: flex;
     justify-content: space-between;
-    margin-top: 50px;
+    /*margin-top: 50px;*/
     width: 95px;
     align-items: center;
 }
@@ -86,8 +87,6 @@ body {
     align-items: center;
 }
 
-
-
 .icon_night, .svg {
     width: 30px;
     height: 30px;
@@ -101,7 +100,6 @@ body {
     fill: var(--primary-white);
     align-items: center;
 }
-
 
 
 .hr {
@@ -127,6 +125,7 @@ body {
 .destination_check {
     margin-top: 100px;
 }
+
 .destination {
     width: 245px;
     height: 20px;
@@ -140,16 +139,19 @@ body {
 .check {
     width: 175px;
     height: 20px;
-    margin-right: 670px;
+    display: inline;
     margin-left: 220px;
     color: var(--primary-white);
     font: 18px Roboto, sans-serif;
     font-weight: 400;
     line-height: 21px;
 }
-.booking_rectangle {
+
+.form_search {
     margin-top: 24px;
     width: 100%;
+    display: flex;
+    justify-content: flex-start;
 }
 
 .destination_form {
@@ -158,8 +160,8 @@ body {
     border: 3px solid var(--primary-stroke);
     background-color: var(--primary-stroke);
     border-radius: 8px;
+    box-sizing: border-box;
     margin-left: 105px;
-    float: left;
 }
 
 .dates_form {
@@ -168,7 +170,7 @@ body {
     border: 3px solid var(--secondary-yellow);
     background-color: var(--primary-stroke);
     border-radius: 8px;
-    float: left;
+    box-sizing: border-box;
 }
 
 .form {
@@ -177,9 +179,8 @@ body {
     border: 3px solid var(--primary-stroke);
     background-color: var(--primary-stroke);
     border-radius: 8px;
-    float: left;
+    box-sizing: border-box;
 }
-
 
 .button {
     width: 190px;
@@ -193,12 +194,11 @@ body {
     line-height: 28px;
 }
 
-
 .mobile_icons {
+    border: none;
+    width: inherit;
     margin-top: 115px;
-    margin-left: 590px;
-    margin-bottom: 120px;
-
+    text-align: center;
 }
 
 .google_play {
@@ -209,4 +209,46 @@ body {
 .app_store {
     width: 120px;
     height: 40px;
+}
+
+@media only screen and (max-width: 1024px) {
+    /*For tablets*/
+    --one-col-width: 8.33%;
+    .col-md-1 {width: var(--one-col-width);}
+    .col-md-2 {width: calc(var(--one-col-width) * 2);}
+    .col-md-3 {width: 25%;}
+    .col-md-4 {width: calc(var(--one-col-width) * 4);}
+    .col-md-5 {width: calc(var(--one-col-width) * 5);}
+    .col-md-6 {width: 50%;}
+    .col-md-7 {width: calc(var(--one-col-width) * 7);}
+    .col-md-8 {width: calc(var(--one-col-width) * 8);}
+    .col-md-9 {width: 75%;}
+    .col-md-10 {width: calc(var(--one-col-width) * 10);}
+    .col-md-11 {width: calc(var(--one-col-width) * 11);}
+    .col-md-12 {width: 100%;}
+}
+@media only screen and (max-width: 480px) {
+    /*For mobile phones*/
+    --one-col-width: 8.33%;
+    .col-sm-1 {width: var(--one-col-width);}
+    .col-sm-2 {width: calc(var(--one-col-width) * 2);}
+    .col-sm-3 {width: 25%;}
+    .col-sm-4 {width: calc(var(--one-col-width) * 4);}
+    .col-sm-5 {width: calc(var(--one-col-width) * 5);}
+    .col-sm-6 {width: 50%;}
+    .col-sm-7 {width: calc(var(--one-col-width) * 7);}
+    .col-sm-8 {width: calc(var(--one-col-width) * 8);}
+    .col-sm-9 {width: 75%;}
+    .col-sm-10 {width: calc(var(--one-col-width) * 10);}
+    .col-sm-11 {width: calc(var(--one-col-width) * 11);}
+    .col-sm-12 {width: 100%;}
+}
+
+@media only screen and (max-width: 480px) {
+    .words, .destination, .check {
+        display: none;
+    }
+    .form_search {
+        flex-wrap: wrap;
+    }
 }

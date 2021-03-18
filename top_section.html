@@ -19,21 +19,19 @@
   </symbol>
 </svg>
 
-
-
 <div class="big-container">
   <div class="big-upper">
 
-    <svg class="image">
+    <svg class="image col-lg-2 col-sm-5">
       <use href="#logo_vector" />
     </svg>
 
-    <div class="upper">
-      <div class="words">
+    <div class="upper col-lg-4">
+      <div class="words col-lg-3">
         <span class="stays">Stays</span>
         <span class="attractions">Attractions</span>
       </div>
-      <div class="icons">
+      <div class="icons col-lg-1 col-sm-2">
         <svg class="icon_night">
           <use href="#icon_night" />
         </svg>
@@ -47,57 +45,61 @@
   <div class="hr">
   </div>
 
-  <p class="discover">Discover stays<br>to live, work or just relax</p>
+  <p class="discover col-lg-6 col-sm-12">Discover stays<br>to live, work or just relax</p>
 
   <div class="destination_check">
-    <span class="destination">Your destination or hotel name</span>
-    <span class="check">Check-in - Check-out</span>
+    <span class="destination col-lg-3">Your destination or hotel name</span>
+    <span class="check col-lg-3">Check-in - Check-out</span>
   </div>
+
 
   <div class="booking_rectangle">
 
-    <form action="/" method="get">
+    <form class="form_search" action="/" method="get">
 
 
-        <input class="destination_form" type="search" id="destination" name="destination" placeholder="New York">
         <label for id="destination"></label>
+        <input class="destination_form col-lg-5 col-sm-12" type="search" id="destination" name="destination" placeholder="Minsk">
 
-      <div class="dates_form">
+
+      <div class="dates_form col-lg-2 col-sm-12">
         <input id="dates" type="date" name="calendar">
         <label for id="dates">Tue 15 Sept</label>
+        <br>
         <input id="check_out_date" type="date" name="calendar">
         <label for id="check_out_date">Sat 19 Sept</label>
       </div>
 
-      <div class="form">
+      <div class="form col-lg-1 col-sm-4">
         <label for="select_adults">Adults</label>
         <br>
         <input id="select_adults" type="number" min="1" max="5">
       </div>
 
-      <div class="form">
+      <div class="form col-lg-1 col-sm-4">
         <label for="select_children">Children</label>
         <br>
         <input id="select_children" type="number" min="1" max="5">
       </div>
 
-      <div class="form">
+      <div class="form col-lg-1 col-sm-4">
         <label for="select_rooms">Rooms</label>
         <br>
         <input id="select_rooms" type="number" min="1" max="5">
       </div>
 
-      <button class="button" type="submit">Search</button>
+      <button class="button col-lg-2 col-sm-12" type="submit">Search</button>
     </form>
   </div>
 
 
-  <div class="mobile_icons">
+  <div class="mobile_icons col-lg-3 col-sm-10">
     <img class="google_play"
          src="images/booking_images/google-play-badge.svg" alt="google-play">
     <img class="app_store"
          src="images/booking_images/Download_on_the_App_Store_Badge_US-UK_RGB_blk_092917%201.svg" alt="App_Store">
   </div>
+
 
 
 </div>
