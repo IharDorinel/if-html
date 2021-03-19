@@ -17,8 +17,10 @@
 body {
     margin: 0;
 }
+
 .big-container {
-    width: 1440px;
+    width: 100vw;
+    /*width: 1440px;*/
     height: 900px;
     min-height: 100vh;
     background-image: url("images/booking_images/kastelmeccano.jpg");
@@ -211,6 +213,23 @@ body {
     height: 40px;
 }
 
+@media only screen and (min-width: 1024px) {
+    /*For desktops*/
+    --one-col-width: 8.33%;
+    .col-lg-1 {width: var(--one-col-width);}
+    .col-lg-2 {width: calc(var(--one-col-width) * 2);}
+    .col-lg-3 {width: 25%;}
+    .col-lg-4 {width: calc(var(--one-col-width) * 4);}
+    .col-lg-5 {width: calc(var(--one-col-width) * 5);}
+    .col-lg-6 {width: 50%;}
+    .col-lg-7 {width: calc(var(--one-col-width) * 7);}
+    .col-lg-8 {width: calc(var(--one-col-width) * 8);}
+    .col-lg-9 {width: 75%;}
+    .col-lg-10 {width: calc(var(--one-col-width) * 10);}
+    .col-lg-11 {width: calc(var(--one-col-width) * 11);}
+    .col-lg-12 {width: 100%;}
+}
+
 @media only screen and (max-width: 1024px) {
     /*For tablets*/
     --one-col-width: 8.33%;
@@ -227,6 +246,7 @@ body {
     .col-md-11 {width: calc(var(--one-col-width) * 11);}
     .col-md-12 {width: 100%;}
 }
+
 @media only screen and (max-width: 480px) {
     /*For mobile phones*/
     --one-col-width: 8.33%;
