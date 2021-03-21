@@ -1,46 +1,74 @@
 @import url(fonts.css);
 
-.big-container {
-    max-width: 1100px;
-    padding: 120px 140px 120px 180px;
+:root {
+    --primary: #3077C6;
+    --primary-dark: #10367C;
+    --secondary-yellow: #F5BD41;
+    --secondary-dark-mode1: #121212;
+    --secondary-dark-mode2: #1D1E1F;
+    --secondary-dark-mode3: #4D4D4D;
+    --primary-stroke: #F3F3F4;
+    --primary-text: #383838;
+    --primary-white: #FFFFFF;
+    --secondary-text: #BFBFBF;
+    --primary-bg: #EAF0F9;
 }
 
 .heading {
-    font: bold 50px Roboto;
+    font: bold 40px Roboto, sans-serif;
     text-align: center;
-    margin: auto;
+    margin-top: 120px;
 }
-
-.rectangle {
-    margin: auto;
-    width: 100px;
-    height: 4px;
-    background-color: #F5BD41;
-}
-
 
 .container {
+    max-width: 1100px;
+    padding: 120px 140px 120px 180px;
     display: flex;
     justify-content: space-between;
-    font: 25px Roboto;
-    margin-top: 200px;
+    font: 25px Roboto, sans-serif;
+    margin-top: 100px;
 }
 
 .box {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-    position: relative;
-    width: 250px;
 }
 
 .icon {
-    fill: #3077C6;
-    position: absolute;
-    left: 80px;
-    top: -100px;
+    fill: var(--primary);
+    align-self: auto;
+    text-align: center;
+}
 
+/*For mobile phones*/
+[class*="col-"] {
+    width: 100%;
+}
+
+@media only screen and (max-width: 768px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        padding: unset;
+        margin: auto;
+        font: 15px Roboto, sans-serif;
+    }
+
+    .heading {
+        font: bold 28px Roboto, sans-serif;
+    }
+
+    .box {
+        margin-top: 25px;
+    }
+
+    .icon svg {
+        max-width: 70%;
+    }
 }
 
 

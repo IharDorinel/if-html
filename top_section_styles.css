@@ -1,7 +1,25 @@
+@import url(fonts.css);
+
+:root {
+    --primary: #3077C6;
+    --primary-dark: #10367C;
+    --secondary-yellow: #F5BD41;
+    --secondary-dark-mode1: #121212;
+    --secondary-dark-mode2: #1D1E1F;
+    --secondary-dark-mode3: #4D4D4D;
+    --primary-stroke: #F3F3F4;
+    --primary-text: #383838;
+    --primary-white: #FFFFFF;
+    --secondary-text: #BFBFBF;
+    --primary-bg: #EAF0F9;
+}
+
+body {
+    margin: 0;
+}
 .big-container {
     width: 1440px;
     height: 900px;
-    /*min-height: 100vh;*/
     background-image: url("images/booking_images/kastelmeccano.jpg");
     background-repeat: no-repeat;
     background-position: top;
@@ -41,7 +59,7 @@
 .image, .svg {
     width: 205px;
     height: 40px;
-    fill: #3077C6;
+    fill: var(--primary);
     margin-top: 50px;
     margin-left: 100px;
     align-items: center;
@@ -50,7 +68,7 @@
 .stays {
     width: 60px;
     height: 30px;
-    color: #ffffff;
+    color: var(--primary-white);
     font: 24px Roboto, sans-serif;
     font-weight: 400;
     line-height: 28px;
@@ -60,7 +78,7 @@
 .attractions {
     width: 120px;
     height: 30px;
-    color: #ffffff;
+    color: var(--primary-white);
     font: 24px Roboto, sans-serif;
     font-weight: 400;
     line-height: 28px;
@@ -72,14 +90,14 @@
 .icon_night, .svg {
     width: 30px;
     height: 30px;
-    fill: #ffffff;
+    fill: var(--primary-white);
     align-items: center;
 }
 
 .icon_account, .svg {
     width: 40px;
     height: 40px;
-    fill: #ffffff;
+    fill: var(--primary-white);
     align-items: center;
 }
 
@@ -90,7 +108,7 @@
     margin-left: 1000px;
     width: 50px;
     height: 4px;
-    background-color: #F5BD41;
+    background-color: var(--secondary-yellow);
     border: none;
 }
 
@@ -99,7 +117,7 @@
     height: 120px;
     margin-top: 200px;
     margin-left: 100px;
-    color: #ffffff;
+    color: var(--primary-white);
     font: 50px Roboto, sans-serif;
     font-weight: 500;
     line-height: 60px;
@@ -112,7 +130,7 @@
     width: 245px;
     height: 20px;
     margin-left: 130px;
-    color: #ffffff;
+    color: var(--primary-white);
     font: 18px Roboto, sans-serif;
     font-weight: 400;
     line-height: 21px;
@@ -123,7 +141,7 @@
     height: 20px;
     margin-right: 670px;
     margin-left: 220px;
-    color: #ffffff;
+    color: var(--primary-white);
     font: 18px Roboto, sans-serif;
     font-weight: 400;
     line-height: 21px;
@@ -136,61 +154,42 @@
 .destination_form {
     width: 400px;
     height: 65px;
-    border: 3px solid #F3F3F4;
-    background-color: #F3F3F4;
+    border: 3px solid var(--primary-stroke);
+    background-color: var(--primary-stroke);
     border-radius: 8px;
     margin-left: 105px;
     float: left;
-    align-items: center;
 }
 
 .dates_form {
     width: 260px;
     height: 71px;
-    border: 3px solid #F5BD41;
-    background-color: #F3F3F4;
+    border: 3px solid var(--secondary-yellow);
+    background-color: var(--primary-stroke);
     border-radius: 8px;
     float: left;
-
 }
 
-.adults_form {
+.form {
     width: 100px;
     height: 65px;
-    border: 3px solid #F3F3F4;
-    background-color: #F3F3F4;
+    border: 3px solid var(--primary-stroke);
+    background-color: var(--primary-stroke);
     border-radius: 8px;
     float: left;
 }
 
-.children_form {
-    width: 100px;
-    height: 65px;
-    border: 3px solid #F3F3F4;
-    background-color: #F3F3F4;
-    border-radius: 8px;
-    float: left;
-}
-
-.rooms_form {
-    width: 100px;
-    height: 65px;
-    border: 3px solid #F3F3F4;
-    background-color: #F3F3F4;
-    border-radius: 8px;
-    float: left;
-}
 
 .button {
     width: 190px;
     height: 71px;
-    color: #F3F3F4;
-    background-color: #3077C6;
+    color: var(--primary-stroke);
+    background-color: var(--primary);
+    border-color: var(--primary);
     border-radius: 8px;
     font: 24px Roboto, sans-serif;
     font-weight: 500;
     line-height: 28px;
-
 }
 
 
