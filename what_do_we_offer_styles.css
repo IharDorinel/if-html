@@ -45,6 +45,7 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    text-align: center;
 }
 
 .icon {
@@ -54,12 +55,6 @@
 }
 
 
-
-
-/*For mobile phones*/
-/*[class*="col-"] {*/
-/*    width: 100%;*/
-/*}*/
 @media only screen and (min-width: 1024px) {
     /*For desktops*/
     --one-col-width: 8.33%;
@@ -109,28 +104,6 @@
     .col-sm-12 {width: 100%;}
 }
 
-/*@media only screen and (max-width: 1232px) {*/
-/*    .container {*/
-/*        display: flex;*/
-/*        flex-wrap: wrap;*/
-/*        align-items: center;*/
-/*        padding: unset;*/
-/*        margin: auto;*/
-/*        font: 15px Roboto, sans-serif;*/
-/*    }*/
-
-/*    .heading {*/
-/*        font: bold 28px Roboto, sans-serif;*/
-/*    }*/
-
-/*    .box {*/
-/*        margin-top: 25px;*/
-/*    }*/
-
-/*    .icon svg {*/
-/*        max-width: 70%;*/
-/*    }*/
-
 @media only screen and (max-width: 1024px) {
     .container {
         display: flex;
@@ -149,10 +122,6 @@
         margin-top: 25px;
     }
 
-    /*    .icon svg {*/
-    /*        max-width: 50%;*/
-    /*    }*/
-    /*}*/
 }
     @media only screen and (max-width: 480px) {
         .container {
@@ -173,22 +142,19 @@
             margin-top: 25px;
         }
 
-        /*.icon svg {*/
-        /*    max-width: 70%;*/
-        /*}*/
-        .iconSupport {
+        .icon-support {
             width: 53px;
             height: 64px;
         }
-        .iconCommunicate {
+        .icon-communicate {
             width: 58px;
             height: 58px;
         }
-        .iconBook {
+        .icon-book {
             width: 70px;
             height: 47px;
         }
-        .iconReal {
+        .icon-real {
             width: 64px;
             height: 58px;
         }
