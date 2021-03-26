@@ -15,7 +15,16 @@
 }
 body {
     margin: 0;
+
+}
+
+.homes-guests {
     background-color: var(--primary-bg);
+
+}
+
+.homes-guests-container {
+
 }
 
 h1 {
@@ -26,7 +35,7 @@ h1 {
     margin-top: 120px;
 }
 
-.home-photos-box {
+.gallery {
     padding: 105px 105px 120px 105px;
     display: flex;
     justify-content: space-around;
@@ -34,7 +43,7 @@ h1 {
     position: relative;
 }
 
-.home-place-box {
+.box {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -42,7 +51,7 @@ h1 {
     margin-right: 15px;
 }
 
-.home-photo {
+.photo {
     width: 100%;
     max-width: 300px;
     height: 100%;
@@ -83,6 +92,108 @@ h1 {
     visibility: hidden;
 }
 
+.best-destinations-btns {
+    display: flex;
+    background-color: var( --primary-stroke);
+    border-radius: 8px;
+    width: 620px;
+}
+
+.btn {
+    height: 64px;
+    width: 190px;
+    font: 24px Roboto, sans-serif;
+    font-weight: 400;
+    line-height: 28px;
+    background-color: var( --primary-stroke);
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+
+}
+
+.best-destinations-btn-places {
+    width: 240px;
+}
+
+.btn:focus {
+    background-color: var(--primary);
+    color: var(--primary-white);
+}
+
+.best-destinations-book {
+    width: 130px;
+    height: 50px;
+    font: 18px Roboto, sans-serif;
+    font-weight: 400;
+    line-height: 21px;
+    background-color: var(--primary-white);
+    color: var(--primary);
+    border-radius: 8px;
+    border-color: var(--primary);
+    cursor: pointer;
+    position: absolute;
+    left: 135px;
+    top: 45%;
+}
+
+.sign-up-container {
+    margin: 120px 105px;
+    background-color: var(--primary-bg);
+    position: relative;
+    height: 200px;
+}
+
+
+.sign-up-closer {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.sign-up-text {
+    font: 24px Roboto, sans-serif;
+    font-weight: 500;
+    line-height: 28px;
+    position: absolute;
+    left: 100px;
+    top: 20px;
+}
+
+.sign-up-icon {
+    width: 85px;
+    height: 85px;
+    position: absolute;
+    top: 30%;
+    left: 20px;
+}
+
+.sign-up-btn {
+    width: 130px;
+    height: 50px;
+    font: 18px Roboto, sans-serif;
+    font-weight: 400;
+    line-height: 21px;
+    background-color: var(--primary-white);
+    color: var(--primary);
+    border-radius: 8px;
+    border-color: var(--primary);
+    cursor: pointer;
+    position: absolute;
+    left: 135px;
+    top: 45%;
+}
+
+.sign-up-container-adapt {
+    background-color: var(--primary-white);
+    border-color: var(--primary-white);
+    height: 200px;
+    width: 100vw;
+    display: none;
+}
+
+
+
 @media only screen and (min-width: 1024px) {
     /*For desktops*/
     --one-col-width: 8.33%;
@@ -119,7 +230,7 @@ h1 {
 
 @media only screen and (max-width: 1235px) {
 
-    .home-place-box:not(:nth-of-type(1), :nth-of-type(2)) {
+    .box:not(:nth-of-type(1), :nth-of-type(2)) {
         display: none;
     }
 }
@@ -130,13 +241,13 @@ h1 {
         font: 28px Roboto, sans-serif;
     }
 
-    .home-photos-box {
+    .gallery {
         padding: unset;
         flex-wrap: nowrap;
         align-items: center;
     }
 
-    .home-photo {
+    .photo {
         max-width: 150px;
         max-height: 150px;
     }
@@ -147,13 +258,41 @@ h1 {
         line-height: 14px;
     }
 
-    .home-place-box {
+    .box {
         width: 150px;
         height: 250px;
     }
 
-    .home-place-box:not(:nth-of-type(1), :nth-of-type(2)) {
+    .box:not(:nth-of-type(1), :nth-of-type(2)) {
         display: none;
+    }
+
+    .sign-up-container {
+        display: none;
+    }
+
+    .sign-up-container-adapt {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .sign-up-text-adapt {
+        font: 12px Roboto, sans-serif;
+        font-weight: 400;
+        line-height: 14px;
+    }
+
+    .sign-up-install-adapt {
+        width: 130px;
+        height: 50px;
+        font: 14px Roboto, sans-serif;
+        font-weight: 400;
+        line-height: 16px;
+        background-color: var(--primary-white);
+        color: var(--primary);
+        border: none;
+        cursor: pointer;
     }
 
 }
