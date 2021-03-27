@@ -466,14 +466,14 @@ related__input:not(:placeholder-shown) ~ .related__label,
 
 /*offer section*/
 
-.heading {
+.offer-heading {
     font: bold 40px Roboto, sans-serif;
     text-align: center;
     margin-top: 120px;
 
 }
 
-.heading:hover:after {
+.offer-heading:hover:after {
     content: "";
     display: block;
     width: 100px;
@@ -483,7 +483,7 @@ related__input:not(:placeholder-shown) ~ .related__label,
     position: relative;
 }
 
-.container {
+.offer-container {
     max-width: 1100px;
     padding: 120px 140px 120px 180px;
     font: 25px Roboto, sans-serif;
@@ -492,7 +492,7 @@ related__input:not(:placeholder-shown) ~ .related__label,
     margin-top: 100px;
 }
 
-.box {
+.offer-box {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -500,7 +500,7 @@ related__input:not(:placeholder-shown) ~ .related__label,
     text-align: center;
 }
 
-.icon {
+.offer-icon {
     fill: var(--primary);
     align-self: auto;
     text-align: center;
@@ -558,7 +558,7 @@ related__input:not(:placeholder-shown) ~ .related__label,
 @media only screen and (max-width: 1024px) {
 
 
-    .container {
+    .offer-container {
         display: flex;
         flex-wrap: wrap;
         align-items: center;
@@ -567,32 +567,37 @@ related__input:not(:placeholder-shown) ~ .related__label,
         font: 20px Roboto, sans-serif;
     }
 
-    .heading {
+    .offer-heading {
         font: bold 28px Roboto, sans-serif;
     }
 
-    .box {
+    .offer-box {
         margin-top: 25px;
     }
 
 
 }
 @media only screen and (max-width: 480px) {
-    .container {
+    .offer-container {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         align-items: center;
-        padding: unset;
+        padding: 0 0 40px 0;
         margin: auto;
         font: 15px Roboto, sans-serif;
     }
 
-    .heading {
+    .offer-heading {
         font: bold 28px Roboto, sans-serif;
+        margin-top: 25px;
     }
 
-    .box {
+    .offer-heading:hover:after {
+        display: none;
+    }
+
+    .offer-box {
         margin-top: 25px;
     }
 
@@ -633,7 +638,7 @@ h1 {
     text-align: center;
 }
 
-.gallery {
+.home-guests-gallery, .best-destinations-gallery, .gallery {
     padding: 105px 105px 120px 105px;
     display: flex;
     justify-content: space-around;
@@ -870,11 +875,15 @@ h1 {
 
 @media only screen and (max-width: 768px) {
 
+    .homes-guests-container, .best-destinations-container {
+        padding-top: 40px;
+    }
+
     h1 {
         font: 28px Roboto, sans-serif;
     }
 
-    .gallery {
+    .home-guests-gallery, .best-destinations-gallery, .gallery {
         padding: unset;
         flex-wrap: nowrap;
         align-items: center;
@@ -922,9 +931,14 @@ h1 {
 
     }
 
+    .best-destinations-book {
+        display: none;
+    }
+
     .hidden-word {
         display: none;
     }
+
 
     .sign-up-container {
         display: none;
@@ -945,7 +959,7 @@ h1 {
     }
 
     .sign-up-install-adapt {
-        width: 130px;
+        width: 75px;
         height: 50px;
         font: 14px Roboto, sans-serif;
         font-weight: 400;
@@ -965,25 +979,25 @@ h1 {
     padding: 120px 270px 120px 100px;
 }
 
-.image {
+.footer-image {
     fill: var(--primary-white);
     margin: auto;
     text-align: center;
     display: none;
 }
 
-.container {
+.footer-container {
     display: flex;
     justify-content: space-between;
 }
 
-.box {
+.footer-box {
     font: 20px Roboto, sans-serif;
     line-height: 25px;
     color: var(--primary-white);
 }
 
-.footer {
+.footer-footer {
     font: 10px Roboto, sans-serif;
     color: var(--primary-white);
     margin-top: 50px;
@@ -1044,23 +1058,25 @@ h1 {
 
 
 @media only screen and (max-width: 1024px) {
-    .big-container {
-        padding: 120px 0 120px 100px;
+
+    .footer-big {
+        padding: 120px 0 120px 30px;
         text-align: center;
     }
 
-    .container {
+    .footer-container {
         max-height: 50%;
         justify-content: space-around;
         text-align: center;
-        margin: 0 50px 0 0;
+        margin: 0 25px 0 0;
     }
 
-    .image {
+    .footer-image {
         display: flex;
+        padding-left: 50px;
     }
 
-    .box {
+    .footer-box {
         font: 15px Roboto, sans-serif;
     }
 
@@ -1072,9 +1088,16 @@ h1 {
         text-decoration: underline;
     }
 
-    .footer {
+    .footer-footer {
         font: 12px Roboto, sans-serif;
         text-align: center;
-        margin: 50px 100px 0 0;
+        margin: 50px 100px 0 50px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+
+    .footer-footer {
+        margin: 50px 100px 0 -20px;
     }
 }
