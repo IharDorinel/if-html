@@ -981,11 +981,7 @@ h1 {
 
     }
 
-    .best-destinations-photo {
-
-    }
-
-    .best-destinations-book {
+    .best-destinations-photo-link:hover:after {
         display: none;
     }
 
