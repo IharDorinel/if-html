@@ -38,8 +38,8 @@
 
             <div class="upper">
                 <div class="words">
-                    <span class="word">Stays</span>
-                    <span class="word">Attractions</span>
+                    <span id="stays" class="word">Stays</span>
+                    <span id="attractions" class="word">Attractions</span>
                 </div>
                 <div class="icons">
                     <svg class="icon-night">
@@ -71,24 +71,24 @@
                     <svg class="loupe-icon destination__loupe-icon">
                         <use href="#loupe-icon"/>
                     </svg>
-                    <input type="text" name="destination" id="destination" class="destination__input" placeholder="">
+                    <input type="text" name="destination" id="destination" class="destination__input" placeholder=" ">
                     <label for="destination" class="destination__label">Your destination or hotel name</label>
                 </div>
                 <div class="search-form__group check">
-                    <input type="text" name="check-in" id="check-in" class="check__input" placeholder="">
+                    <input type="text" class="check__input" name="check-in" id="check-in" placeholder=" ">
                     <label for="check-in" class="check__label">Check-in</label>
-                    <input type="text" name="check-out" id="check-out" class="check__input" placeholder="">
+                    <input type="text" class="check__input" name="check-out" id="check-out" placeholder=" ">
                     <label for="check-out" class="check__label">Check-out</label>
                     <label for="check-in" class="check__label check__label--desktop">Check-in — Check-out</label>
                 </div>
                 <div class="search-form__group related">
-                    <input type="text" name="adults" id="adults" class="related__input" placeholder="">
+                    <input type="text" name="adults" id="adults" class="related__input" placeholder=" ">
                     <label for="adults" class="related__label">Adults</label>
                     <span class="divider"></span>
-                    <input type="text" name="children" id="children" class="related__input" placeholder="">
+                    <input type="text" name="children" id="children" class="related__input" placeholder=" ">
                     <label for="children" class="related__label">Children</label>
                     <span class="divider"></span>
-                    <input type="text" name="rooms" id="rooms" class="related__input" placeholder="">
+                    <input type="text" name="rooms" id="rooms" class="related__input" placeholder=" ">
                     <label for="rooms" class="related__label">Rooms</label>
                     <label for="adults" class="related__label related__label--desktop">2 Adults — 0 Children — 1 Room</label>
                 </div>
@@ -214,28 +214,37 @@
         <div class="best-destinations-gallery gallery col-lg-10 col-sm-12">
 
             <div class="best-destinations-box box">
+                <a href="#" class="best-destinations-photo-link">
                 <img class="best-destinations-photo photo" src="images/destinations_images/Maldives.svg" alt="Maldives">
+                </a>
                 <p class="home-hotel-name home-text">Maldives</p>
-
             </div>
+
             <div class="best-destinations-box box">
+                <a href="#" class="best-destinations-photo-link">
                 <img class="best-destinations-photo photo" src="images/destinations_images/Spain.svg" alt="Spain">
+            </a>
                 <p class="home-hotel-name home-text">Spain</p>
 
             </div>
+
             <div class="best-destinations-box box">
+                <a href="#" class="best-destinations-photo-link">
                 <img class="best-destinations-photo photo" src="images/destinations_images/Norway.svg" alt="Norway">
-                <p class="home-hotel-name home-text">Norway</p>
-
+                </a>
+                    <p class="home-hotel-name home-text">Norway</p>
             </div>
+
             <div class="best-destinations-box box">
+                <a href="#" class="best-destinations-photo-link">
                 <img class="best-destinations-photo photo" src="images/destinations_images/Island.svg" alt="Island">
-                <p class="home-hotel-name home-text">Island</p>
+                </a>
+                    <p class="home-hotel-name home-text">Island</p>
 
             </div>
-            <form>
-                <button class="best-destinations-book">Book now</button>
-            </form>
+<!--            <form>-->
+<!--                <button class="best-destinations-book">Book now</button>-->
+<!--            </form>-->
 
             <div class="home-switcher">
                 <img class="home-switcher-dest" src="images/homes_images/arrow.svg" alt="arrow" width="40" height="40">

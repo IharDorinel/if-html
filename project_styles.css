@@ -15,7 +15,8 @@
 }
 body {
     margin: 0;
-
+    padding:0;
+    box-sizing: border-box;
 }
 
 /*header section*/
@@ -67,11 +68,20 @@ body {
 .word:hover:after {
     content: "";
     display: block;
-    width: calc(100% - 10px);
     height: 4px;
-    background: #F5BD41;
-    margin: auto;
-    position: relative;
+    background-color: var(--secondary-yellow);
+    position: absolute;
+    margin-top: 5px;
+    transform: translateX(10%);
+    transition: opacity 0.4s ease;
+}
+
+#stays:hover:after {
+    width: 50px;
+}
+
+#attractions:hover:after {
+    width: 95px;
 }
 
 .image, .svg {
@@ -224,14 +234,14 @@ input {
 .destination__input:not(:placeholder-shown) + .destination__label,
 .destination__input:focus + .destination__label,
 
-check__input:not(:placeholder-shown) ~ .check__label,
-.check__input:focus ~ .check__label,
+.check__input:not(:placeholder-shown) ~ .check__label--desktop,
+.check__input:focus ~ .check__label--desktop,
 
-related__input:not(:placeholder-shown) ~ .related__label,
-.related__input:focus ~ .related__label {
+.related__input:not(:placeholder-shown) ~ .related__label--desktop,
+.related__input:focus ~ .related__label--desktop{
     transform: translateY(-50px);
     color: var(--primary-white);
-    transition: all .2s;
+    transition: all .25s;
 }
 
 
@@ -393,14 +403,14 @@ related__input:not(:placeholder-shown) ~ .related__label,
     .check__input:focus + .check__label,
 
     .related__input:not(:placeholder-shown) + .related__label,
-    .related__input:focus + .related__label
-    {
+    .related__input:focus + .related__label{
         transform: translateY(-15px);
         color: var(--primary-text);
         font-size: 12px;
         font-weight: 400;
         transition: all .25s;
     }
+
 
     .divider {
         height: 30px;
@@ -478,9 +488,11 @@ related__input:not(:placeholder-shown) ~ .related__label,
     display: block;
     width: 100px;
     height: 4px;
-    background: #F5BD41;
-    margin: auto;
-    position: relative;
+    background-color: var(--secondary-yellow);
+    position: absolute;
+    margin-top: 20px;
+    transition: opacity 0.4s ease;
+    left: 630px;
 }
 
 .offer-container {
@@ -569,6 +581,10 @@ related__input:not(:placeholder-shown) ~ .related__label,
 
     .offer-heading {
         font: bold 28px Roboto, sans-serif;
+    }
+
+    .offer-heading:hover:after {
+        display: none;
     }
 
     .offer-box {
@@ -706,7 +722,7 @@ h1 {
     /*background-color: var( --primary-stroke);*/
     border-radius: 8px;
     width: 620px;
-    padding-left: 120px;
+    padding-left: 105px;
 }
 
 .btn {
@@ -733,9 +749,43 @@ h1 {
 
 
 .best-destinations-photo:hover {
-    opacity: 0.5;
+    opacity: 1;
     transform: scale(1.05);
     transition: .5s;
+    filter: brightness(50%);
+}
+
+
+/*.best-destinations-photo-link::before {*/
+/*    content: "";*/
+/*    position: absolute;*/
+/*    top: 0;*/
+/*    left: 0;*/
+/*    right: 0;*/
+/*    bottom: 0;*/
+/*    background: rgba(56, 56, 56, 0.4);*/
+/*    box-shadow: inset 0 4px 70px rgb(56 56 56 / 50%);*/
+/*    opacity: 0;*/
+/*}*/
+
+
+.best-destinations-photo-link:hover:after {
+    content: "Book now";
+    position: absolute;
+    top: 40%;
+    /*right: 27%;*/
+    left: 5%;
+    font: 18px Roboto, sans-serif;
+    color: var(--primary);
+    width: 130px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--primary-white);
+    border: 1px solid var(--primary);
+    border-radius: 8px;
+    /*opacity: 1;*/
 }
 
 /*.best-destinations-photo:hover {*/
@@ -750,21 +800,21 @@ h1 {
 
 
 
-.best-destinations-book {
-    width: 130px;
-    height: 50px;
-    font: 18px Roboto, sans-serif;
-    font-weight: 400;
-    line-height: 21px;
-    background-color: var(--primary-white);
-    color: var(--primary);
-    border-radius: 8px;
-    border-color: var(--primary);
-    cursor: pointer;
-    position: absolute;
-    left: 165px;
-    top: 40%;
-}
+/*.best-destinations-book {*/
+/*    width: 130px;*/
+/*    height: 50px;*/
+/*    font: 18px Roboto, sans-serif;*/
+/*    font-weight: 400;*/
+/*    line-height: 21px;*/
+/*    background-color: var(--primary-white);*/
+/*    color: var(--primary);*/
+/*    border-radius: 8px;*/
+/*    border-color: var(--primary);*/
+/*    cursor: pointer;*/
+/*    position: absolute;*/
+/*    left: 165px;*/
+/*    top: 40%;*/
+/*}*/
 
 .home-switcher-dest {
     transform: rotate(90deg);
@@ -887,6 +937,10 @@ h1 {
         padding: unset;
         flex-wrap: nowrap;
         align-items: center;
+        max-width: 96vw;
+        display: flex;
+        justify-content: space-around;
+
     }
 
     .photo {
@@ -910,7 +964,7 @@ h1 {
     }
 
     .best-destinations-btns {
-        max-width: 100vw;
+        max-width: 92vw;
         justify-content: space-around;
         padding-left: 0;
     }
