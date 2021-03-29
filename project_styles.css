@@ -286,7 +286,6 @@ input {
         width: 345px;
         align-items: center;
         margin-top: 50px;
-
     }
 
     .search-section {
@@ -573,7 +572,6 @@ input {
 
 @media only screen and (max-width: 1024px) {
 
-
     .offer-container {
         display: flex;
         flex-wrap: wrap;
@@ -802,7 +800,6 @@ h1 {
     opacity: 1;
 }
 
-
 .home-switcher-dest {
     transform: rotate(90deg);
     text-align: center;
@@ -819,6 +816,7 @@ h1 {
     position: relative;
     height: 200px;
 }
+
 
 .sign-up-closer {
     position: absolute;
@@ -855,8 +853,8 @@ h1 {
     line-height: 21px;
     background-color: var(--primary-white);
     color: var(--primary);
+    border: 1px solid var(--primary);
     border-radius: 8px;
-    border-color: var(--primary);
     cursor: pointer;
     position: absolute;
     left: 135px;
@@ -925,17 +923,17 @@ h1 {
         font: 28px Roboto, sans-serif;
     }
 
-    .home-guests-gallery, .best-destinations-gallery, .gallery {
+    .gallery {
         padding: unset;
         flex-wrap: nowrap;
         align-items: center;
-        max-width: 96vw;
+        max-width: 100vw;
         display: flex;
         justify-content: space-around;
 
     }
 
-    .photo {
+    .image {
         max-width: 150px;
         max-height: 150px;
     }
@@ -955,23 +953,18 @@ h1 {
         display: none;
     }
 
-    /*.home-switcher-right {*/
-    /*    right: 30px;*/
-    /*    left: -20px;*/
-    /*    top: 22%;*/
-    /*}*/
 
     .home-switcher-right {
         text-align: center;
         position: absolute;
         right: 30px;
-        left: 365px;
+        left: 370px;
         top: -50%;
     }
 
 
     .best-destinations-btns {
-        max-width: 92vw;
+        max-width: 97vw;
         background-color: var(--primary-white);
         justify-content: space-around;
         margin-left: 0;
@@ -984,11 +977,15 @@ h1 {
         font-weight: 400;
         line-height: 22px;
         background-color: var(--primary-white);
-        border: 1px solid #F3F3F4;
+        border: 1px solid var(--primary-stroke);
+    }
+
+    .best-destinations-photo-link:hover::before{
+        opacity: 0;
     }
 
     .best-destinations-photo-link:hover:after {
-        display: none;
+        opacity: 0;
     }
 
     .hidden-word {
@@ -1000,14 +997,9 @@ h1 {
         text-align: center;
         position: absolute;
         right: 30px;
-        left: 365px;
+        left: 370px;
         top: 30%;
     }
-
-    /*.sign-up {*/
-    /*    */
-    /*    padding: unset;*/
-    /*}*/
 
     .sign-up-container {
         display: none;
@@ -1017,7 +1009,7 @@ h1 {
         display: flex;
         justify-content: space-around;
         align-items: center;
-        height: 10vw;
+        height: 10vh;
     }
 
     .sign-up-text-adapt {
