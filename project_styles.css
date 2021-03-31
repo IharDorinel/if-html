@@ -1024,6 +1024,128 @@ h1 {
     }
 }
 
+/*reviews section*/
+
+.reviews-gallery {
+    margin: 120px 105px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.reviews-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-right: 15px;
+}
+
+.reviews-image {
+    max-width: 400px;
+    max-height: 400px;
+}
+
+.reviews-review {
+    width: 400px;
+    height: 360px;
+    background-color: var(--primary-bg);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.reviews-review-1 {
+    margin: 0 25px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.reviews-name {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.reviews-rating-viewing {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-end;
+}
+
+.reviews-rating {
+    font: 18px Roboto, sans-serif;
+    font-weight: 400;
+    line-height: 24px;
+    color: var(--primary-white);
+}
+
+.reviews-account {
+    width: 55px;
+    height: 55px;
+    fill: var(--secondary-text);
+}
+
+.reviews-user {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.reviews-review-2 {
+    width: 200px;
+    height: 55px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 30px;
+}
+
+.name {
+    font: 18px Roboto, sans-serif;
+    line-height: 21px;
+    color: var(--primary);
+}
+
+.reviews-hotel-name {
+    font-weight: 500;
+}
+
+.reviews-country-name {
+    font-weight: 400;
+}
+
+.reviews-viewing {
+    font: 14px Roboto, sans-serif;
+    font-weight: 400;
+    line-height: 16px;
+    color: var(--secondary-text);
+}
+
+.reviews-person, .reviews-person-country, .reviews-feedback {
+    font: 18px Roboto, sans-serif;
+    font-weight: 400;
+    line-height: 21px;
+    color: var(--primary-text);
+    margin: 0;
+}
+
+.reviews-person-country {
+    color: var(--secondary-text);
+}
+
+#rectangle {
+    width: 50px;
+    height: 35px;
+    background: var(--primary-dark);
+    border-radius: 8px;
+    margin-top: 15px;
+}
+
+.reviews-feedback {
+    margin: 25px 25px 65px 25px;
+}
+
 /*footer section*/
 
 .footer-big {
