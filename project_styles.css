@@ -480,6 +480,10 @@ input {
 
 /*offer section*/
 
+.offer {
+    max-width: 100vw;
+}
+
 .offer-heading {
     font: bold 40px Roboto, sans-serif;
     text-align: center;
@@ -669,6 +673,9 @@ h1 {
     flex-direction: column;
     justify-content: space-around;
     width: 300px;
+}
+
+.box:not(:last-child) {
     margin-right: 15px;
 }
 
@@ -801,6 +808,11 @@ h1 {
     position: absolute;
     left: 670px;
     top: 300px;
+}
+
+.sign-up-reviews {
+    display: flex;
+    flex-direction: column;
 }
 
 /*sign-up section*/
@@ -1026,10 +1038,18 @@ h1 {
 
 /*reviews section*/
 
+.reviews {
+    max-width: 100vw;
+}
+
+.reviews-title-adapt {
+    display: none;
+}
+
 .reviews-gallery {
     margin: 120px 105px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 
 }
 
@@ -1037,12 +1057,37 @@ h1 {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+    width: 400px;
+    position: relative;
+}
+
+.reviews-box:not(:last-child) {
     margin-right: 15px;
 }
 
+.reviews-cost {
+    width: 375px;
+    height: 50px;
+    font: 18px Roboto, sans-serif;
+    font-weight: 500;
+    line-height: 21px;
+    color: var(--primary-white);
+    background-color: rgba(56, 56, 56, 0.7);
+    display: flex;
+    align-items: center;
+    padding-left: 25px;
+    top: 350px;
+    position: absolute;
+}
+
 .reviews-image {
+    width: 100%;
+    height: 100%;
     max-width: 400px;
     max-height: 400px;
+    object-fit: cover;
+    object-position: top left;
+
 }
 
 .reviews-review {
@@ -1073,12 +1118,21 @@ h1 {
     align-items: flex-end;
 }
 
-.reviews-rating {
+#rectangle {
     font: 18px Roboto, sans-serif;
     font-weight: 400;
     line-height: 24px;
     color: var(--primary-white);
+    text-align: center;
 }
+
+/*.reviews-rating {*/
+/*    font: 18px Roboto, sans-serif;*/
+/*    font-weight: 400;*/
+/*    line-height: 24px;*/
+/*    color: var(--primary-white);*/
+/*    text-align: center;*/
+/*}*/
 
 .reviews-account {
     width: 55px;
@@ -1093,7 +1147,7 @@ h1 {
 }
 
 .reviews-review-2 {
-    width: 200px;
+    width: 180px;
     height: 55px;
     display: flex;
     justify-content: space-between;
@@ -1111,9 +1165,6 @@ h1 {
     font-weight: 500;
 }
 
-.reviews-country-name {
-    font-weight: 400;
-}
 
 .reviews-viewing {
     font: 14px Roboto, sans-serif;
@@ -1143,8 +1194,162 @@ h1 {
 }
 
 .reviews-feedback {
-    margin: 25px 25px 65px 25px;
+    padding: 25px 25px 65px 25px;
+    font: 18px Roboto, sans-serif;
+    font-weight: 400;
+    line-height: 21px;
 }
+
+.reviews-switchers {
+    display: none;
+}
+
+
+@media only screen and (min-width: 1024px) {
+    /*For desktops*/
+    --one-col-width: 8.33%;
+    .col-lg-1 {width: var(--one-col-width);}
+    .col-lg-2 {width: calc(var(--one-col-width) * 2);}
+    .col-lg-3 {width: 25%;}
+    .col-lg-4 {width: calc(var(--one-col-width) * 4);}
+    .col-lg-5 {width: calc(var(--one-col-width) * 5);}
+    .col-lg-6 {width: 50%;}
+    .col-lg-7 {width: calc(var(--one-col-width) * 7);}
+    .col-lg-8 {width: calc(var(--one-col-width) * 8);}
+    .col-lg-9 {width: 75%;}
+    .col-lg-10 {width: calc(var(--one-col-width) * 10);}
+    .col-lg-11 {width: calc(var(--one-col-width) * 11);}
+    .col-lg-12 {width: 100%;}
+}
+@media only screen and (max-width: 1024px) {
+    /*For tablets*/
+    --one-col-width: 8.33%;
+    .col-md-1 {width: var(--one-col-width);}
+    .col-md-2 {width: calc(var(--one-col-width) * 2);}
+    .col-md-3 {width: 25%;}
+    .col-md-4 {width: calc(var(--one-col-width) * 4);}
+    .col-md-5 {width: calc(var(--one-col-width) * 5);}
+    .col-md-6 {width: 50%;}
+    .col-md-7 {width: calc(var(--one-col-width) * 7);}
+    .col-md-8 {width: calc(var(--one-col-width) * 8);}
+    .col-md-9 {width: 75%;}
+    .col-md-10 {width: calc(var(--one-col-width) * 10);}
+    .col-md-11 {width: calc(var(--one-col-width) * 11);}
+    .col-md-12 {width: 100%;}
+}
+@media only screen and (max-width: 480px) {
+    /*For mobile phones*/
+    --one-col-width: 8.33%;
+    .col-sm-1 {width: var(--one-col-width);}
+    .col-sm-2 {width: calc(var(--one-col-width) * 2);}
+    .col-sm-3 {width: 25%;}
+    .col-sm-4 {width: calc(var(--one-col-width) * 4);}
+    .col-sm-5 {width: calc(var(--one-col-width) * 5);}
+    .col-sm-6 {width: 50%;}
+    .col-sm-7 {width: calc(var(--one-col-width) * 7);}
+    .col-sm-8 {width: calc(var(--one-col-width) * 8);}
+    .col-sm-9 {width: 75%;}
+    .col-sm-10 {width: calc(var(--one-col-width) * 10);}
+    .col-sm-11 {width: calc(var(--one-col-width) * 11);}
+    .col-sm-12 {width: 100%;}
+}
+
+@media only screen and (max-width: 480px) {
+
+    .sign-up-reviews {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .reviews {
+        background-color: var(--primary-bg);
+        height: 800px;
+    }
+
+    .reviews-container {
+        padding: 40px 0;
+    }
+
+    .reviews-title {
+        display: none;
+    }
+
+    .reviews-title-adapt {
+        display: block;
+    }
+
+    .reviews-gallery {
+        margin-top: 35px;
+    }
+
+    .reviews-box {
+        width: 325px;
+    }
+
+    .reviews-box:not(:first-child) {
+        display: none;
+    }
+
+    .reviews-box:not(:last-child) {
+        margin-right: 0;
+    }
+
+    .reviews-cost {
+        display: none;
+    }
+
+    .reviews-image {
+        max-width: 325px;
+        max-height: 325px;
+    }
+
+    .reviews-review {
+        max-width: 325px;
+        justify-content: flex-start;
+    }
+
+    .name {
+        font: 15px Roboto, sans-serif;
+        line-height: 18px;
+    }
+
+    .reviews-viewing {
+        font: 12px Roboto, sans-serif;
+        font-weight: 400;
+        line-height: 14px;
+    }
+
+    .reviews-feedback {
+        padding: 0;
+    }
+
+    .reviews-person, .reviews-feedback {
+        font: 15px Roboto, sans-serif;
+        font-weight: 400;
+        line-height: 18px;
+    }
+
+    .reviews-review-1 {
+        margin: 0;
+    }
+
+    .reviews-review-2 {
+        margin: 0;
+    }
+
+    .reviews-switchers {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 56px;
+        margin: 32px auto 40px;
+    }
+
+
+
+}
+
+
 
 /*footer section*/
 
