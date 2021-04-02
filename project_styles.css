@@ -1272,6 +1272,11 @@ h1 {
         margin: 0;
     }
 
+    .reviews-person-country {
+        width: 70%;
+        height: 70%;
+    }
+
     .reviews-feedback {
         padding: 0;
     }
@@ -1450,7 +1455,7 @@ h1 {
         display: none;
     }
 
-    ._font-weight-bold {
+    ._underline {
         text-decoration: underline;
     }
 
