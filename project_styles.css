@@ -652,10 +652,12 @@ input {
 
 .homes-guests {
     background-color: var(--primary-bg);
+
 }
 
 .homes-guests-container {
     padding-top: 120px;
+
 }
 
 h1 {
@@ -666,7 +668,7 @@ h1 {
     margin-top: 0;
 }
 
-.gallery {
+.home-guests-gallery, .best-destinations-gallery, .gallery {
     padding: 105px 105px 120px 105px;
     display: flex;
     justify-content: space-around;
@@ -679,9 +681,6 @@ h1 {
     flex-direction: column;
     justify-content: space-around;
     width: 300px;
-}
-
-.box:not(:last-child) {
     margin-right: 15px;
 }
 
@@ -691,11 +690,11 @@ h1 {
 
 .photo {
     width: 100%;
-    max-width: 300px;
     height: 100%;
-    max-height: 300px;
+    min-width: 300px;
+    min-height: 300px;
     object-fit: cover;
-    object-position: top left;
+    object-position: center;
 }
 
 .home-text {
@@ -712,11 +711,15 @@ h1 {
     color: var(--secondary-text);
 }
 
+.hidden {
+    visibility: hidden;
+}
+
 .home-switcher {
     display: flex;
     justify-content: space-between;
     position: absolute;
-    right: 100px;
+    right: 50px;
     left: -20px;
     top: 33%;
 }
@@ -816,11 +819,6 @@ h1 {
     top: 300px;
 }
 
-.sign-up-reviews {
-    display: flex;
-    flex-direction: column;
-}
-
 /*sign-up section*/
 
 .sign-up-container {
@@ -829,6 +827,7 @@ h1 {
     position: relative;
     height: 200px;
 }
+
 
 .sign-up-closer {
     position: absolute;
@@ -876,7 +875,7 @@ h1 {
 .sign-up-container-adapt {
     background-color: var(--primary-white);
     border-color: var(--primary-white);
-    height: 100px;
+    height: 200px;
     width: 100vw;
     padding: 25px 0;
     display: none;
@@ -945,9 +944,9 @@ h1 {
 
     }
 
-    .image {
-        max-width: 150px;
-        max-height: 150px;
+    .photo {
+        min-width: 150px;
+        min-height: 150px;
     }
 
     .home-text {
@@ -970,7 +969,7 @@ h1 {
         text-align: center;
         position: absolute;
         right: 30px;
-        left: 370px;
+        left: 390px;
         top: -50%;
     }
 
@@ -1009,7 +1008,7 @@ h1 {
         text-align: center;
         position: absolute;
         right: 30px;
-        left: 370px;
+        left: 390px;
         top: 30%;
     }
 
@@ -1021,6 +1020,7 @@ h1 {
         display: flex;
         justify-content: space-around;
         align-items: center;
+        height: 10vh;
     }
 
     .sign-up-text-adapt {
@@ -1041,6 +1041,7 @@ h1 {
         cursor: pointer;
     }
 }
+
 
 /*reviews section*/
 
@@ -1082,18 +1083,17 @@ h1 {
     display: flex;
     align-items: center;
     padding-left: 25px;
-    top: 350px;
+    top: 354px;
     position: absolute;
 }
 
 .reviews-image {
     width: 100%;
     height: 100%;
-    max-width: 400px;
-    max-height: 400px;
+    min-width: 400px;
+    min-height: 400px;
     object-fit: cover;
-    object-position: top left;
-
+    object-position: top center;
 }
 
 .reviews-review {
@@ -1185,7 +1185,9 @@ h1 {
     font-weight: 600;
     line-height: 24px;
     color: var(--primary-white);
-    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .reviews-feedback {
@@ -1193,6 +1195,19 @@ h1 {
     font: 18px Roboto, sans-serif;
     font-weight: 400;
     line-height: 21px;
+    position: relative;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.reviews-feedback:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+    background: linear-gradient(180deg, transparent, var(--primary-bg));
 }
 
 .home-switcher-review {
@@ -1234,6 +1249,10 @@ h1 {
         width: 325px;
     }
 
+    .reviews-box:not(:first-child) {
+        display: none;
+    }
+
     .reviews-box:not(:last-child) {
         margin-right: 0;
     }
@@ -1243,8 +1262,8 @@ h1 {
     }
 
     .reviews-image {
-        max-width: 325px;
-        max-height: 325px;
+        min-width: 325px;
+        min-height: 325px;
     }
 
     .reviews-review {
@@ -1299,9 +1318,10 @@ h1 {
 
 @media only screen and (max-width: 900px) {
 
-    .reviews-box:not(:first-child) {
-        display: none;
+    .reviews-feedback:after {
+        height: 25px;
     }
+
 
     .home-switcher-review {
         display: none;
