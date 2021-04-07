@@ -55,11 +55,13 @@ a {
     width: 345px;
     align-items: center;
     margin-top: 50px;
+
 }
 
 .header-nav-adapt {
     display: none;
 }
+
 
 .header-nav-words {
     display: flex;
