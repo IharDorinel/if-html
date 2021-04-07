@@ -159,6 +159,22 @@ a {
         margin-top: 25px;
     }
 
+@media only screen and (max-width: 480px) {
+    .offer-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 0 40px 0;
+        margin: auto;
+        font: 15px Roboto, sans-serif;
+    }
+
+    .offer-heading {
+        font: bold 28px Roboto, sans-serif;
+        margin-top: 25px;
+    }
+
     .offer-heading:hover:after {
         display: none;
     }
