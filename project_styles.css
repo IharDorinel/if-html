@@ -188,7 +188,7 @@ input {
     display: none;
 }
 
-.destination__label {
+.destination__label, .check__label--desktop, .related__label--desktop {
     transition: all .25s;
 }
 
