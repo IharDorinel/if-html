@@ -1,3 +1,4 @@
+
 @import url(fonts.css);
 
 :root {
@@ -54,11 +55,13 @@ a {
     width: 345px;
     align-items: center;
     margin-top: 50px;
+
 }
 
 .header-nav-adapt {
     display: none;
 }
+
 
 .header-nav-words {
     display: flex;
@@ -116,8 +119,8 @@ a {
 }
 
 .menu-icon, .svg {
-    width: 24px;
-    height: 16px;
+    width: 25px;
+    height: 15px;
     fill: var(--primary-white);
 }
 
@@ -448,13 +451,13 @@ input {
     }
 
     .icon-night, .svg {
-        width: 16px;
-        height: 16px;
+        width: 15px;
+        height: 15px;
     }
 
     .icon-account, .svg {
-        width: 24px;
-        height: 24px;
+        width: 25px;
+        height: 25px;
     }
 
     .image, .svg {
@@ -476,3 +479,4 @@ input {
         line-height: 35px;
     }
 }
+
