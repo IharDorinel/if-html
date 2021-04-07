@@ -14,24 +14,39 @@
     --primary-bg: #EAF0F9;
 }
 
-.heading {
+body {
+    margin: 0;
+    padding:0;
+    width: 100vw;
+    box-sizing: border-box;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+
+.offer-heading {
     font: bold 40px Roboto, sans-serif;
     text-align: center;
     margin-top: 120px;
 
 }
 
-
-.heading:hover:after {
+.offer-heading:hover:after {
     content: "";
     display: block;
     width: 100px;
     height: 4px;
-    background: #F5BD41;
-    margin: auto;
+    background-color: var(--secondary-yellow);
+    position: absolute;
+    margin-top: 20px;
+    transition: opacity 0.4s ease;
+    left: 630px;
 }
 
-.container {
+.offer-container {
     max-width: 1100px;
     padding: 120px 140px 120px 180px;
     font: 25px Roboto, sans-serif;
@@ -40,20 +55,19 @@
     margin-top: 100px;
 }
 
-.box {
+.offer-box {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    text-align: center;
 }
 
-.icon {
+.offer-icon {
     fill: var(--primary);
     align-self: auto;
     text-align: center;
 }
-
-
 
 @media only screen and (min-width: 1024px) {
     /*For desktops*/
@@ -104,10 +118,9 @@
     .col-sm-12 {width: 100%;}
 }
 
-
 @media only screen and (max-width: 1024px) {
 
-    .container {
+    .offer-container {
         display: flex;
         flex-wrap: wrap;
         align-items: center;
@@ -116,49 +129,57 @@
         font: 20px Roboto, sans-serif;
     }
 
-    .heading {
+    .offer-heading {
         font: bold 28px Roboto, sans-serif;
     }
 
-    .box {
+    .offer-heading:hover:after {
+        display: none;
+    }
+
+    .offer-box {
+        margin-top: 25px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .offer-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 0 40px 0;
+        margin: auto;
+        font: 15px Roboto, sans-serif;
+    }
+
+    .offer-heading {
+        font: bold 28px Roboto, sans-serif;
         margin-top: 25px;
     }
 
-}
-    @media only screen and (max-width: 480px) {
-        .container {
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            align-items: center;
-            padding: unset;
-            margin: auto;
-            font: 15px Roboto, sans-serif;
-        }
-
-        .heading {
-            font: bold 28px Roboto, sans-serif;
-        }
-
-        .box {
-            margin-top: 25px;
-        }
-
-        .iconSupport {
-            width: 53px;
-            height: 64px;
-        }
-        .iconCommunicate {
-            width: 58px;
-            height: 58px;
-        }
-        .iconBook {
-            width: 70px;
-            height: 47px;
-        }
-        .iconReal {
-            width: 64px;
-            height: 58px;
-        }
+    .offer-heading:hover:after {
+        display: none;
     }
 
+    .offer-box {
+        margin-top: 25px;
+    }
+
+    .icon-support {
+        width: 53px;
+        height: 64px;
+    }
+    .icon-communicate {
+        width: 58px;
+        height: 58px;
+    }
+    .icon-book {
+        width: 70px;
+        height: 47px;
+    }
+    .icon-real {
+        width: 64px;
+        height: 58px;
+    }
+}
