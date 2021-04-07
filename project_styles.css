@@ -721,7 +721,7 @@ h1 {
     padding-top: 120px;
 }
 
-.best-destinations-btns {
+.best-destinations-btns-block {
     display: flex;
     background-color: var( --primary-stroke);
     border-radius: 8px;
@@ -959,7 +959,7 @@ h1 {
     }
 
 
-    .best-destinations-btns {
+    .best-destinations-btns-block {
         max-width: 97vw;
         background-color: var(--primary-white);
         justify-content: space-around;
@@ -976,11 +976,7 @@ h1 {
         border: 1px solid var(--primary-stroke);
     }
 
-    .best-destinations-photo-link:hover::before{
-        opacity: 0;
-    }
-
-    .best-destinations-photo-link:hover:after {
+    .best-destinations-photo-link:hover::before, .best-destinations-photo-link:hover:after{
         opacity: 0;
     }
 
