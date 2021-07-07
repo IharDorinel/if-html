@@ -142,6 +142,7 @@ a {
     }
 }
 
+
 @media only screen and (max-width: 480px) {
     .offer-container {
         display: flex;
